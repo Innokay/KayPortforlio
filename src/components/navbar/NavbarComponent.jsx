@@ -28,11 +28,12 @@ const NavbarComponent = ({ darkMode, setDarkMode }) => {
                     <Link to="/" className="hover:text-sky-400 transition">Home</Link>
                 </li>
                 <li>
-                    <a href="#projects" className="hover:text-sky-400 transition">Projects</a>
+                    <a href="/projects" className="hover:text-sky-400 transition">Projects</a>
                 </li>
                 <li>
-                    <a href="#contact" className="hover:text-sky-400 transition">Contact</a>
+                    <a href="/contact" className="hover:text-sky-400 transition">Contact</a>
                 </li>
+                <Link to="/about">About Me</Link>
             </ul>
             <button
                 onClick={() => setDarkMode(!darkMode)}

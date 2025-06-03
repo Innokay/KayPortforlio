@@ -16,8 +16,8 @@ const slides = [
   {
     id: 3,
     title: 'Slide Three',
-    description: 'The third slide is here to impress you.',
-    imageUrl: 'https://source.unsplash.com/random/800x400?sig=3',
+    description: 'Skilled, developed not just to code, but to produce solutions to realtime problems.',
+    imageUrl: '/images/portforlio_splash.png',
   },
 ];
 
@@ -25,7 +25,7 @@ const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
 
-  const delay = 5000; // 5 seconds auto slide
+  const delay = 2000; // 5 seconds auto slide
 
   const resetTimeout = () => {
     if (timeoutRef.current) {
@@ -91,7 +91,7 @@ const Carousel = () => {
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-60 text-gray-800 rounded-full p-2 shadow-lg transition"
       >
         <svg
-          className="w-6 h-6"
+          className="w-6 h-6 bg-white"
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
@@ -108,7 +108,7 @@ const Carousel = () => {
         className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-60 text-gray-800 rounded-full p-2 shadow-lg transition"
       >
         <svg
-          className="w-6 h-6"
+          className="w-6 h-6 bg-white"
           fill="none"
           stroke="currentColor"
           strokeWidth="2"

@@ -8,13 +8,14 @@ import SplashScreen from './components/Intro/SplashScreen'
 import Carousel from './components/carousel/Carousel';
 import ContactMe from './components/contacts/ContactMe';
 import BasicInfo from './components/interact/BasicInfo';
+import AboutMe from './components/contacts/AboutMe';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowSplash(false), 5000); // 2 seconds
+    const timer = setTimeout(() => setShowSplash(false), 1500); // 2 seconds
     return () => clearTimeout(timer);
   }, []);
 
@@ -36,6 +37,7 @@ function App() {
           <Carousel />
           <Routes>
             <Route path="/" element={<HomePage/>} />
+            <Route path="/about" element={<AboutMe/>} />
             <Route path="/basicinfo" element={<BasicInfo/>} />
             <Route path="/contact" element={<ContactMe/>} />
             <Route path="/home" element={<HomePage/>} />
