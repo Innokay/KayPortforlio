@@ -1,0 +1,7 @@
+@keyframes grow-shrink {
+  0%, 100% { transform: scale(1);}
+  50% { transform: scale(1.1);}
+}
+.animate-grow-shrink {
+  animation: grow-shrink 1.5s ease-in-out infinite;
+}
