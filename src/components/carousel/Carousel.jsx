@@ -10,8 +10,8 @@ const slides = [
   {
     id: 2,
     title: 'Slide Two',
-    description: 'Here is the second slide with some cool content.',
-    imageUrl: 'https://source.unsplash.com/random/800x400?sig=2',
+    description: 'Im A full stack software developer, with the ability to make concrete software',
+    imageUrl: '/images/kaysocial.png',
   },
   {
     id: 3,
